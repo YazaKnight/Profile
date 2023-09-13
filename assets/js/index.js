@@ -1,1 +1,3 @@
-alert('It works!');
+window.onload = () => {
+    alert('It works!');
+}
