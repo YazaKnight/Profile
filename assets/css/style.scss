@@ -3,6 +3,6 @@
     
 @import "{{ site.theme }}";
 
-#main_content {
-    color: yellow !important;
+#main_content > * {
+    color: blueviolet !important;
 }
