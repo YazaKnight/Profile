@@ -1,4 +1,4 @@
-document.onload = () => {
+window.onload = () => {
     const title = document.querySelector('h1')
     const letters = title.innerText.split('')
 
