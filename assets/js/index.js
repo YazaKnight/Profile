@@ -13,9 +13,9 @@ document.onload = () => {
         for (let i=0; i<title.children.length; i++) {
             window.setTimeout(() => {
                 animate([
-                    {t: 0, type: 'transform' , value: 'translateY(-30px)', timmingFunction: 'cubic-bezier(.19,.81,.42,1)'},
-                    {t: 40, type: 'transform' , value: 'translateY(10px)', timmingFunction: 'cubic-bezier(.19,.05,.73,.02)'},
-                    {t: 80, type: 'transform' , value: 'translateY(0)', timmingFunction: 'ease-out'}
+                    {t: 0, type: 'transform' , value: 'translateY(-30px)', timingFunction: 'cubic-bezier(.19,.81,.42,1)'},
+                    {t: 40, type: 'transform' , value: 'translateY(10px)', timingFunction: 'cubic-bezier(.19,.05,.73,.02)'},
+                    {t: 80, type: 'transform' , value: 'translateY(0)', timingFunction: 'ease-out'}
                 ], {
                     duration: 1500,
                     name: 'bounce',
@@ -27,5 +27,20 @@ document.onload = () => {
         }
     }
 
-    
+    function animate(steps, options) {
+        for (let i=0; i<steps.length; i++) {
+            if (steps[i]?.t >= 0 && steps[i]?.type && steps[i]?.value && steps[i]?.timingFunction) {
+                window.setTimeout(() => {
+                    options.element.style[steps[i].type] = steps[i].value
+                    if (i === steps.length - 1) {
+                        options,element.style.transition = steps[i].type + ' ' + (100 - steps[i].t) * options.duration / 100 + 'ms' + steps[i].timingFunction
+                    } else {
+                        options.element.style.transition = steps[i].type + ' ' + (steps[i + 1].t - steps[i].t) * options.duration / 100 + 'ms' + steps[i].timingFunction
+                    }
+                }, steps[i].t * options.duration / 100)
+            } else {
+                console.error('You forgot mandatory animation property in step ' + k + ', step need (t, type, value, timingFunction)')
+            }
+        }
+    }
 }
