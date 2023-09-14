@@ -29,6 +29,7 @@ window.onload = () => {
 
     function animate(steps, options) {
         for (let i=0; i<steps.length; i++) {
+            console.log(steps)
             if (steps[i]?.t >= 0 && steps[i]?.type && steps[i]?.value && steps[i]?.timingFunction) {
                 window.setTimeout(() => {
                     options.element.style[steps[i].type] = steps[i].value
@@ -43,4 +44,6 @@ window.onload = () => {
             }
         }
     }
+
+    bounceAnimation()
 }
