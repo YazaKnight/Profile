@@ -1,5 +1,5 @@
 window.onload = () => {
-    const title = document.querySelector('h3')
+    const title = document.querySelector('#name_header')
     const letters = title.innerText.split('')
 
     title.innerText = ''

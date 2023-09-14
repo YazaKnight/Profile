@@ -3,6 +3,19 @@
     
 @import "{{ site.theme }}";
 
-#main_content > * {
-    color: blueviolet !important;
+#title_animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    h2 {
+        margin: 0;
+        font-family: 'Montserrat', sans-serif;
+        > span {
+            display: inline-block;
+            margin: 0 3px;
+            transform-origin: center;
+        }
+    }
 }
