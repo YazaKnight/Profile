@@ -1,5 +1,5 @@
 window.onload = () => {
-    const title = document.querySelector('h2')
+    const title = document.querySelector('h3')
     const letters = title.innerText.split('')
 
     title.innerText = ''
@@ -11,20 +11,19 @@ window.onload = () => {
 
     function bounceAnimation() {
         for (let i=0; i<title.children.length; i++) {
-            console.log(title.children[i])
             window.setTimeout(() => {
-                animate([
-                    {t: 0, type: 'transform', value: 'translateY(-30px)', timingFunction: 'cubic-bezier(.19,.81,.42,1)'},
-                    {t: 40, type: 'transform', value: 'translateY(10px)', timingFunction: 'cubic-bezier(.19,.05,.73,.02)'},
-                    {t: 80, type: 'transform', value: 'translateY(0)', timingFunction: 'ease-out'}
-                ], {
-                    duration: 1500,
-                    name: 'bounce',
-                    element: title.children[i],
-                    iterations: 'infinite',
-                    iterationsDelay: 5000
-                })
-            }, i*50)
+              animate([
+                {t: 0, type: 'transform', value: 'translateY(-30px)', timingFunction: 'cubic-bezier(.19,.81,.42,1)'},
+                {t: 40, type: 'transform', value: 'translateY(10px)', timingFunction: 'cubic-bezier(.19,.05,.73,.02)'},
+                {t: 80, type: 'transform', value: 'translateY(0)', timingFunction: 'ease-out'}
+              ], {
+                duration: 1500,
+                name: 'bounce',
+                element: title.children[i],
+                iterations: 'infinite',
+                iterationsDelay: 2000
+              })
+            }, i * 50)
         }
     }
 
