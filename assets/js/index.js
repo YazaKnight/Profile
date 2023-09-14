@@ -30,17 +30,17 @@ window.onload = () => {
 
     function animate(steps, options) {
         for (let i=0; i<steps.length; i++) {
-            if (steps[i]?.t >= 0 && steps[i]?.type && steps[i]?.value && steps[i]?.timingFunction) {
+            if(steps[i]?.t >= 0 && steps[i]?.type && steps[i]?.value && steps[i]?.timingFunction) {
                 window.setTimeout(() => {
                     options.element.style[steps[i].type] = steps[i].value
-                    if (i === steps.length - 1) {
-                        options.element.style.transition = steps[i].type + ' ' + (100 - steps[i].t) * options.duration / 100 + 'ms' + steps[i].timingFunction
+                    if(i === steps.length - 1) {
+                    options.element.style.transition = steps[i].type  + ' ' + (100 - steps[i].t) * options.duration / 100 + 'ms ' + steps[i].timingFunction
                     } else {
-                        options.element.style.transition = steps[i].type + ' ' + (steps[i + 1].t - steps[i].t) * options.duration / 100 + 'ms' + steps[i].timingFunction
+                    options.element.style.transition = steps[i].type  + ' ' + (steps[i + 1].t - steps[i].t) * options.duration / 100 + 'ms ' + steps[i].timingFunction
                     }
                 }, steps[i].t * options.duration / 100)
             } else {
-                console.error('You forgot mandatory animation property in step ' + i + ', step need (t, type, value, timingFunction)')
+                console.error('You forget mandatory animation property in step ' + k + ', step need (t, type, value, timingFunction)')
             }
         }
     }
