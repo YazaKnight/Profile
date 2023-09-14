@@ -11,11 +11,12 @@ window.onload = () => {
 
     function bounceAnimation() {
         for (let i=0; i<title.children.length; i++) {
+            console.log(title.children[i])
             window.setTimeout(() => {
                 animate([
-                    {t: 0, type: 'transform' , value: 'translateY(-30px)', timingFunction: 'cubic-bezier(.19,.81,.42,1)'},
-                    {t: 40, type: 'transform' , value: 'translateY(10px)', timingFunction: 'cubic-bezier(.19,.05,.73,.02)'},
-                    {t: 80, type: 'transform' , value: 'translateY(0)', timingFunction: 'ease-out'}
+                    {t: 0, type: 'transform', value: 'translateY(-30px)', timingFunction: 'cubic-bezier(.19,.81,.42,1)'},
+                    {t: 40, type: 'transform', value: 'translateY(10px)', timingFunction: 'cubic-bezier(.19,.05,.73,.02)'},
+                    {t: 80, type: 'transform', value: 'translateY(0)', timingFunction: 'ease-out'}
                 ], {
                     duration: 1500,
                     name: 'bounce',
@@ -29,6 +30,7 @@ window.onload = () => {
 
     function animate(steps, options) {
         for (let i=0; i<steps.length; i++) {
+            console.log(steps[i]?.t)
             if (steps[i]?.t >= 0 && steps[i]?.type && steps[i]?.value && steps[i]?.timingFunction) {
                 window.setTimeout(() => {
                     options.element.style[steps[i].type] = steps[i].value
@@ -39,7 +41,7 @@ window.onload = () => {
                     }
                 }, steps[i].t * options.duration / 100)
             } else {
-                console.error('You forgot mandatory animation property in step ' + k + ', step need (t, type, value, timingFunction)')
+                console.error('You forgot mandatory animation property in step ' + i + ', step need (t, type, value, timingFunction)')
             }
         }
     }
