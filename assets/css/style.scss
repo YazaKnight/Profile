@@ -97,7 +97,7 @@
 
 #md_content {
     margin-top: 75px;
-    margin-bottom: 250px;
+    margin-bottom: 100px;
 }
 
 .dino_animation {
@@ -105,7 +105,7 @@
 }
 
 .dino {
-    margin-top: 100px;
+    margin-top: 50px;
     z-index: 1001;
     width: 88px;
     height: 94px;
@@ -140,6 +140,7 @@
     width: 100%;
     height: 300px;
     overflow: hidden;
+    margin: 0 !important;
 
     > .air {
         position: absolute;
@@ -154,7 +155,7 @@
     > .air.air1 {
         animation: wave 30s linear infinite;
         z-index: 1000;
-        opacity: 0.7;
+        opacity: 0.6;
         animation-delay: 0s;
         bottom: 0;
     }
@@ -162,7 +163,7 @@
     > .air.air2 {
         animation: wave2 15s linear infinite;
         z-index: 999;
-        opacity: 0.4;
+        opacity: 0.3;
         animation-delay: -5s;
         bottom: 10px;
     }
@@ -170,7 +171,7 @@
     > .air.air3 {
         animation: wave 30s linear infinite;
         z-index: 998;
-        opacity: 0.2;
+        opacity: 0.1;
         animation-delay: -2s;
         bottom: 15px;
     }
@@ -178,7 +179,7 @@
     > .air.air4{
         animation: wave2 5s linear infinite;
         z-index: 997;
-        opacity: 0.5;
+        opacity: 0.4;
         animation-delay: -5s;
         bottom: 20px;
     }
