@@ -103,6 +103,7 @@
 
 .dino {
     margin-top: 100px;
+    z-index: 100;
     width: 88px;
     height: 94px;
     background-image: url('../img/2x-trex.png');
@@ -132,10 +133,8 @@
 
 section.ground {
     position: relative;
-    left: 0;
-    bottom: 0;
     width: 100%;
-    height: 60%;
+    height: 100%;
     overflow: hidden;
 
     & .air {
@@ -150,7 +149,7 @@ section.ground {
     
     & .air.air1 {
         animation: wave 30s linear infinite;
-        z-index: 1000;
+        z-index: 10;
         opacity: 1;
         animation-delay: 0s;
         bottom: 0;
