@@ -91,3 +91,19 @@
 .os-content {
     padding: 50px 8px 8px 8px;
 }
+
+.dino {
+    width: 88px;
+    height: 94px;
+    background-image: url('../img/2x-trex.png');
+    animation: runDino 0.5s steps(2) infinite;
+}
+
+@keyframes runDino {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: -176px;
+    }
+}
