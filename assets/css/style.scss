@@ -96,23 +96,14 @@
     width: 88px;
     height: 94px;
     background-image: url('../img/2x-trex.png');
-    animation: runDino 0.5s steps(2) infinite;
+    animation: runDino 1s steps(5) infinite;
 }
 
 @keyframes runDino {
-    0% {
+    from {
         background-position: 0px;
     }
-    25% {
-        background-position: -88px;
-    }
-    50% {
-        background-position: -176px;
-    }
-    75% {
-        background-position: -264px;
-    }
-    100% {
-        background-position: -352px;
+    to {
+        background-position: -440px;
     }
 }
