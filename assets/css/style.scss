@@ -13,6 +13,7 @@
     h2 {
         margin: 0;
         color: darkslategrey;
+        font-weight: 900;
         > span {
             display: inline-block;
             margin: 0 3px;
@@ -41,7 +42,7 @@
     background-color: rgba(0, 0, 0, 0.5);
     height: 50px;
     color: white;
-    padding: 4px;
+    padding: 4px 8px 4px 8px;
     display: flex;
     align-items: center;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
@@ -49,13 +50,13 @@
 
 /* Minimize and close buttons */
 .btn {
-    height: 12px;
+    height: 10px;
     border-radius: 50%;
     margin-right: 4px;
     display: inline-block;
     position: relative;
     border: none;
-    box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.25);
+    box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.25);
 
     &.minimize {
         background-color: green;
