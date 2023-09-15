@@ -32,8 +32,8 @@
     width: 100%;
     margin: 0 auto;
     border: 2px solid black;
-    background: linear-gradient(to bottom, lightblue, rgba(255, 255, 255, 0.85)),
-        linear-gradient(to top, #f0e68c, #f0e68c 20%, transparent);
+    background: linear-gradient(to top, #f0e68c, #f0e68c 70%, transparent),
+        linear-gradient(to bottom, lightblue, rgba(255, 255, 255, 0.85));
     box-shadow: 3px 5px 12px rgba(255, 255, 255, 0.25);
     position: relative;
 }
@@ -103,7 +103,7 @@
 
 .dino {
     margin-top: 100px;
-    z-index: 100;
+    z-index: 1001;
     width: 88px;
     height: 94px;
     background-image: url('../img/2x-trex.png');
@@ -143,14 +143,14 @@ section.ground {
         left: 0;
         width: 100%;
         height: 100px;
-        background: url(https://1.bp.blogspot.com/-xQUc-TovqDk/XdxogmMqIRI/AAAAAAAACvI/AizpnE509UMGBcTiLJ58BC6iViPYGYQfQCLcBGAsYHQ/s1600/wave.png);
-        background-size: 1000px 100px
+        background: url(../img/wave.png);
+        background-size: 1500px 100px
     }
     
     & .air.air1 {
         animation: wave 30s linear infinite;
-        z-index: 10;
-        opacity: 1;
+        z-index: 1000;
+        opacity: 0.7;
         animation-delay: 0s;
         bottom: 0;
     }
@@ -158,7 +158,7 @@ section.ground {
     & .air.air2 {
         animation: wave2 15s linear infinite;
         z-index: 999;
-        opacity: 0.5;
+        opacity: 0.4;
         animation-delay: -5s;
         bottom: 10px;
     }
@@ -174,7 +174,7 @@ section.ground {
     & .air.air4{
         animation: wave2 5s linear infinite;
         z-index: 997;
-        opacity: 0.7;
+        opacity: 0.5;
         animation-delay: -5s;
         bottom: 20px;
     }
@@ -185,7 +185,7 @@ section.ground {
       background-position-x: 0px; 
     }
     100%{
-      background-position-x: 1000px; 
+      background-position-x: 1500px; 
     }
 }
 
@@ -194,6 +194,6 @@ section.ground {
       background-position-x: 0px; 
     }
     100%{
-      background-position-x: -1000px; 
+      background-position-x: -1500px; 
     }
 }
