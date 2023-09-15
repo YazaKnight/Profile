@@ -9,11 +9,11 @@
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
-    color: darkslategrey;
-    
+
     h2 {
         margin: 0;
         font-family: 'Montserrat', sans-serif;
+        color: darkslategrey;
         > span {
             display: inline-block;
             margin: 0 3px;
@@ -26,7 +26,6 @@
 #main_content {
     font-family: 'Courier New', Courier, monospace;
     image-rendering: pixelated;
-    color: darkslategrey;
 }
 
 /* Container for the window */
@@ -35,7 +34,7 @@
     margin: 0 auto;
     border: 2px solid black;
     background-color: rgba(255, 255, 255, 0.65);
-    box-shadow: 3px 5px 2px rgba(255, 255, 255, 0.35);
+    box-shadow: 3px 5px 12px rgba(255, 255, 255, 0.25);
     position: relative;
 }
 
@@ -47,12 +46,11 @@
     padding: 4px;
     display: flex;
     align-items: center;
-    box-shadow: 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 /* Minimize and close buttons */
 .btn {
-    width: 12px;
     height: 12px;
     border-radius: 50%;
     margin-right: 4px;
@@ -78,7 +76,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    //transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 .btn.close::before {
@@ -87,7 +85,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    //transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 
