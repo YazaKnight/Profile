@@ -5,7 +5,7 @@
 
 header {
     border-bottom: none !important;
-    padding: 0 !important;
+    padding-bottom: 0 !important;
 }
 
 #title_animation {
@@ -206,4 +206,8 @@ header {
     100%{
       background-position-x: -1500px; 
     }
+}
+
+footer {
+    text-align: center;
 }
