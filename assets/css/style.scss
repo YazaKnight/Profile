@@ -12,7 +12,6 @@
 
     h2 {
         margin: 0;
-        font-family: 'Montserrat', sans-serif;
         color: darkslategrey;
         > span {
             display: inline-block;
@@ -24,7 +23,6 @@
 
 /* General styles for the pixelated look */
 #main_content {
-    font-family: 'Courier New', Courier, monospace;
     image-rendering: pixelated;
 }
 
@@ -40,7 +38,7 @@
 
 /* Window header */
 .os-header {
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.5);
     height: 50px;
     color: white;
     padding: 4px;
@@ -56,6 +54,8 @@
     margin-right: 4px;
     display: inline-block;
     position: relative;
+    border: none;
+    box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.25);
 
     &.minimize {
         background-color: green;
@@ -91,5 +91,5 @@
 
 
 .os-content {
-    padding: 8px;
+    padding: 50px 8px 8px 8px;
 }
