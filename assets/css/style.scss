@@ -96,7 +96,10 @@
     width: 88px;
     height: 94px;
     background-image: url('../img/2x-trex.png');
-    animation: runDino 1s steps(5) infinite;
+    animation: runDino 1.5s steps(4) infinite, moveAcrossScreen 5s linear infinite;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 @keyframes runDino {
@@ -104,6 +107,15 @@
         background-position: 0px;
     }
     to {
-        background-position: -440px;
+        background-position: -352px;
+    }
+}
+
+@keyframes moveAcrossScreen {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 100%;
     }
 }
