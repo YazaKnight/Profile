@@ -124,3 +124,28 @@
         left: 90%;
     }
 }
+
+.ground {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 20px;
+    width: 200vw;
+    background: repeating-linear-gradient(
+      90deg,
+      #5A5A5A,
+      #5A5A5A 10px,
+      #555555 10px,
+      #555555 20px
+    );
+    animation: moveGround 5s linear infinite;
+}
+
+@keyframes moveGround {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: -90%;
+    }
+}
