@@ -32,8 +32,7 @@
     width: 100%;
     margin: 0 auto;
     border: 2px solid black;
-    background: linear-gradient(to top, #f0e68c, #f0e68c 10%, transparent),
-        linear-gradient(to bottom, lightblue, rgba(255, 255, 255, 0.85));
+    background: linear-gradient(to bottom, lightblue, rgba(255, 255, 255, 0.85));
     box-shadow: 3px 5px 12px rgba(255, 255, 255, 0.25);
     position: relative;
 }
@@ -94,6 +93,7 @@
     padding: 50px;
     color: darken($color: dimgray, $amount: 20);
     font-size: 1.15rem;
+    background: linear-gradient(to top, #f0e68c, #f0e68c 10%, transparent),
 }
 
 #md_content {
