@@ -129,18 +129,44 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    height: 20px;
-    width: 100%;
-    background: 
-        radial-gradient(circle, #5A5A5A 30%, transparent 40%),
-        radial-gradient(circle, #555555 30%, transparent 40%) 50px 0,
-        radial-gradient(circle, #5A5A5A 30%, transparent 40%) 25px 10px,
-        radial-gradient(circle, #555555 30%, transparent 40%) 75px 10px;
-    background-size: 100px 20px;
+    height: 30px; /* Increased height to cater for cactus */
+    width: 90%;
+    background: #e7c095; /* Desert color */
     animation: moveGround 5s linear infinite;
 }
 
+.pebbles {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 10px;
+    width: 90%;
+    background:
+        radial-gradient(circle, #5A5A5A 30%, transparent 40%),
+        radial-gradient(circle, #555555 30%, transparent 40%) 50px 0;
+    background-size: 100px 10px;
+}
+
+.cactus {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 25px; 
+    width: 8px;
+    background: #228B22; /* Green color */
+    animation: moveCactus 5s linear infinite;
+}
+
 @keyframes moveGround {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: -90%;
+    }
+}
+
+@keyframes moveCactus {
     0% {
         left: 0;
     }
