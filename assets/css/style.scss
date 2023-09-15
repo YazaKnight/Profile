@@ -3,6 +3,11 @@
     
 @import "{{ site.theme }}";
 
+header {
+    border-bottom: none !important;
+    padding: 0 !important;
+}
+
 #title_animation {
     display: flex;
     justify-content: center;
