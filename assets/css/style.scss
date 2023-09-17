@@ -107,6 +107,11 @@ header {
     overflow-y: scroll;
 }
 
+img[alt=car_robot] { 
+    margin: 0 auto;
+    height: 200px; 
+}
+
 .dino_animation {
     background: linear-gradient(to top, #f0e68c, #f0e68c 40%, transparent);
 }
