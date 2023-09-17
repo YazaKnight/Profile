@@ -1,7 +1,22 @@
-I am in year 6G\\
-I am from egypt\\
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elit duis tristique sollicitudin nibh sit amet commodo. Semper quis lectus nulla at volutpat diam ut venenatis. Morbi non arcu risus quis varius quam quisque id diam. Senectus et netus et malesuada fames ac. Lectus arcu bibendum at varius vel pharetra. Enim nec dui nunc mattis enim. Euismod nisi porta lorem mollis aliquam ut porttitor leo a. Enim blandit volutpat maecenas volutpat blandit. Scelerisque in dictum non consectetur a erat nam at lectus. Aenean et tortor at risus. Massa sapien faucibus et molestie ac feugiat. Donec enim diam vulputate ut pharetra sit amet. Amet dictum sit amet justo. Praesent elementum facilisis leo vel fringilla est.
+I like coding, I sometimes code in the weekends and on holidays. I like coding because it teaches me how computers work and how developers make websites. It also teaches me problem solving.\\
+
+I started learning Python last year. I like Python because it is an easy language to understand and learn about programming. It also is widely used in machine learning and AI software.
+
+Here is a piece of code I've written in Python:
+
+```
+Code
+```
+
+
+Here's another code I wrote to draw on the screen:
+
+```
+Code
+```
 
 ![img](https://placehold.co/600x400)
 
-Quam adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus. Diam vel quam elementum pulvinar etiam non. Eu ultrices vitae auctor eu augue. Risus sed vulputate odio ut enim blandit volutpat maecenas. Lectus magna fringilla urna porttitor rhoncus dolor. Lobortis scelerisque fermentum dui faucibus in. Volutpat consequat mauris nunc congue. Et malesuada fames ac turpis egestas maecenas pharetra. Metus dictum at tempor commodo ullamcorper a. In hac habitasse platea dictumst vestibulum rhoncus est. Gravida quis blandit turpis cursus in hac habitasse. Sem nulla pharetra diam sit amet nisl suscipit adipiscing bibendum.
+Lately, I have been working on an autonomous car with my mum. The car shall self-drive and shall be able to interact with the user. Currently, we have wired a Raspberry Pi to an Arduino that controls the motors on the wheels of the car. The Raspberry Pi recieves directions signals from an iOS app that we developed, and sends that to the Arduino board to control the car. The car has ultrasound sensors which we programmed to stop when nearing an obstacle. In the next stage, we will connect a camera to the car and write the python code needed for facial recognition as well as detecting obstacles (and taking action on that). You can find the code of this project in [this repository](https://github.com/HebaNAS/Yezoo).
+
+![car robot](./assets/img/car-robot.png)
