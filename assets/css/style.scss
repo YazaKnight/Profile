@@ -106,19 +106,19 @@ header {
     margin-bottom: 50px;
     
     > p > img {
-        margin: 0 auto;
         box-shadow: -50px -50px 0 -40px lightseagreen,
             50px 50px 0 -40px lightseagreen;
     }
 }
 
 p:has(> img) {
-    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 img[alt=car_robot] {
     height: 600px;
-    margin: 20px auto;
+    margin-top: 20px;
     filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.25));
 }
 
