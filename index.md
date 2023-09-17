@@ -9,7 +9,7 @@ ninjas = 5
 if ninjas < 10:
     print("i can fight those ninjas")
 elif ninjas < 30:
-    print("that will be a stuggle but i can take them")
+    print("that will be a struggle but i can take them")
 elif ninjas < 50:
     print("thats too many")
 ```
@@ -32,7 +32,7 @@ while step < 10000:
         step = step + 1
 ```
 
-Here's a drawing on the screen that I created using [Python Turtle Graphics package](https://docs.python.org/3/library/turtle.html) (zoom in or open image a new tab to display in better resolution and detail):
+Here's a drawing on the screen that I created using [Python Turtle Graphics package](https://docs.python.org/3/library/turtle.html) (zoom in or open image in a new tab to display in better resolution and detail):
 
 ![turtle](./assets/img/turtle.png)
 
