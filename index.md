@@ -1,4 +1,4 @@
-I like coding, I sometimes code in the weekends and on holidays. I like coding because it teaches me how computers work and how developers make websites. It also teaches me problem solving.\\
+I like coding, I sometimes code in the weekends and on holidays. I like coding because it teaches me how computers work and how developers make websites. It also teaches me problem solving.
 
 I started learning Python last year. I like Python because it is an easy language to understand and learn about programming. It also is widely used in machine learning and AI software.
 

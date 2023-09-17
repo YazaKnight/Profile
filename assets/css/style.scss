@@ -105,11 +105,17 @@ header {
     margin-top: 50px;
     margin-bottom: 50px;
     overflow-y: scroll;
+    display: flex;
+    
+    > img {
+        align-items: center;
+        justify-self: center;
+    }
 }
 
 img[alt=car_robot] { 
     margin: 0 auto;
-    height: 200px; 
+    height: 600px; 
 }
 
 .dino_animation {
